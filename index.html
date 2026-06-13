@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Automatic Rent System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page">
+    <header>
+      <h1>Automatic Rent System</h1>
+      <p>Only editable inputs: Month Date D2, Today Reading H2:H5, and Actual Light J7.</p>
+    </header>
+
+    <section class="controls">
+      <label>
+        Month date / D2
+        <input id="rentDate" type="date" />
+      </label>
+      <button id="resetBtn" type="button">Reset default data</button>
+    </section>
+
+    <section class="table-wrap">
+      <table id="rentTable">
+        <thead>
+          <tr>
+            <th>Sr.No</th>
+            <th>Tenant</th>
+            <th>Mobile</th>
+            <th>Date</th>
+            <th>Rent</th>
+            <th>Light type</th>
+            <th>Last Reading</th>
+            <th>Today Reading</th>
+            <th>Unit rate</th>
+            <th>Light bill</th>
+            <th>Maintenance</th>
+            <th>Total amount</th>
+            <th>WhatsApp</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+        <tfoot></tfoot>
+      </table>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
